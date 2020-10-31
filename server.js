@@ -2,8 +2,10 @@ const express = require('express');
 const compression = require('compression');
 const app = express();
 
+const root = 'dist'
+
 app.use(compression());
-app.use(express.static('www', { index: false }));
+app.use(express.static(root, { index: false }));
 
 // CORS (Cross-Origin Resource Sharing) headers to support Cross-site HTTP requests
 app.all('*', function(req, res, next) {
@@ -15,14 +17,14 @@ app.all('*', function(req, res, next) {
 if (process.env.NODE_ENV === 'prod') {
   app.use((req, res, next) => {
     if (req.header('x-forwarded-proto') !== 'https')
-      res.redirect(`https://${req.header('host')}${req.url}`)
+      res.redirect(`https://${req.header( 'host')}${req.url}`)
     else
       next()
   })
 }
 
 app.route('/*').get(function(req, res) {
-    res.sendFile(`${__dirname}/dist/index.html`);
+    res.sendFile(`${__dirname}/${root}/index.html`);
 });
 
 app.set('port', process.env.PORT || 5000);
