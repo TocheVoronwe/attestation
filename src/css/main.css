@@ -31,7 +31,7 @@ html {
 }
 
 body {
-    margin: 20px;
+    margin: 1.25em;
     background: white;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
@@ -237,6 +237,18 @@ input:valid+span:after {
   padding-left: 0.3em;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 ::placeholder {
   font-style: italic;
 }
@@ -279,7 +291,7 @@ input:valid+span:after {
 }
 
 .covid-subtitle {
-  display: inline-block;
+  display: inline-flex;
   align-items: center;
   font-size: 0.40em;
   padding: 0.3em;
@@ -380,6 +392,12 @@ input:valid+span:after {
   .label-mi {
     color: white;
   }
+}
+
+.validity {
+  display: inline-flex;
+  justify-content: center;
+  width: 2em;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -632,10 +650,10 @@ input:valid+span:after {
 }
 
 .fieldset {
-  margin-left: -2em;
-  margin-right: -2em;
-  padding-left: 2em;
-  padding-right: 2em;
+  margin-left: -1.25em;
+  margin-right: -1.25em;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
   border: 3px solid transparent;
 }
 
