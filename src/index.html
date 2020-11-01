@@ -33,29 +33,23 @@
         }
     }</script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/duck.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/duck.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/duck.png">
     <link rel="manifest" href="./favicons/site.webmanifest">
-    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#21bf73">
+    <link rel="mask-icon" href="./favicons/duck.png" color="#21bf73">
 
     <title>Attestation de déplacement dérogatoire</title>
 </head>
 <body>
 <header role="banner" class="wrapper">
-    <picture>
-        <source srcset="./duck.svg" media="(prefers-color-scheme: dark)">
-        <img src="./duck.svg" alt="Ministère de l'intérieur. Liberté, égalité, fraternité."
-             class="logo" role="presentation" aria-hidden="true">
-    </picture>
-
     <div>
         <h1 class="flex flex-wrap">
                 <span class="covid-title">
                     COVID-19
                 </span>
             <span class="covid-subtitle">
-                  Attestation de déplacement dérogatoire
+                  Attestation Solidaire de déplacement dérogatoire
                 </span>
         </h1>
         <p class="text-desc">
@@ -74,9 +68,9 @@
 
     <div class="wrapper">
         <h2>Pourquoi "Solidaire"?</h2>
-        <p>Le but de ce site est de proposer de générer une attestation Solidaire.</p>
-        <p>À cause des publicités. Pour chaque clic/visionnage de publicité, 75% de la somme sera reversée aux hôpitaux
-            publics et aux commerces qui ont pû souffrir du du confinement.</p>
+        <p>Le but de ce site est de générer des dons via des revenus dûs à la publicité.</p>
+        <p>Chaque clic ou visionnage de publicité permettra de reverser une (grande) partie des bénéfices aux hôpitaux, et ce dès la fin du confinement.</p>
+        <p>Il vous est aussi possible de <a href="https://don.fondationhopitaux.fr/">donner aux hôpitaux de France</a> directement sur le site <a href="https://www.fondationhopitaux.fr/">fondationhopitaux.fr</a>.</p>
         <form id="form-profile" accept-charset="UTF-8"></form>
         <p class="text-center mt-5">
             <button type="button" id="generate-btn" class="btn btn-primary btn-attestation"><span><i
@@ -114,10 +108,6 @@
     <p class="label-mi">
         Ministère de l'Intérieur - DNUM - SDIT
     </p>
-    <picture class="center">
-        <source srcset="/duck_mini.svg" media="(prefers-color-scheme: dark)">
-        <img class="center" src="/duck_mini.svg" alt="logo dnum">
-    </picture>
 </main>
 <footer role="contentinfo" class="main-footer">
     <div class="footer-links">
@@ -129,7 +119,8 @@
            title="Information du gouvernement sur le Covid-19 - nouvelle page" target="_blank"
            class="footer-line footer-link">Informations du gouvernement sur le Covid-19</a>
         <div class="footer-line">Plus d’infos au <a class="num-08" href="tel:0800130000"
-                                                    title="Numéro vert - appel gratuit depuis un poste fixe en France">0 800 130 000</a></div>
+                                                    title="Numéro vert - appel gratuit depuis un poste fixe en France">0
+            800 130 000</a></div>
         <p class="footer-line" id="version"></p>
     </div>
 </footer>
